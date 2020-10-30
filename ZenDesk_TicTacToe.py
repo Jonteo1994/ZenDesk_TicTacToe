@@ -26,7 +26,7 @@ def validateUserChoice(playerName, turn, boardSize,board):                      
 def initBoard():
     while True:
         try:                                                                                                            #User input validation to ensure board is >3x3 and input is an integer
-            boardSize = int(input("Enter desired board size (NxN): "))
+            boardSize = int(input("Enter desired board size (N): "))
             if not type(boardSize) is int or boardSize < 3:
                 raise ValueError("Only Integers and board sizes greater than 3 are allowed")
         except ValueError:
