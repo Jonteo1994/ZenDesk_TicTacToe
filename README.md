@@ -18,7 +18,7 @@ Navigate to ../dist and run "ZenDesk_TicTacToe.exe"
 The tictactoe "Board" is generated in a 2D list and populated with numbers corresponding to their respective cells
 An example of a 6x6 board is shown below.
 
- 0   1   2   3   4   5
+     0    1    2     3   4    5
  --------------------------------
 0  | 1	| 2  | 3  |  4 | 5  | 6  |
 1  | 13	| 14 | 15 | 16 | 17 | 18 | 
