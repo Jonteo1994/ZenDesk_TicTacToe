@@ -28,6 +28,6 @@ An example of a 6x6 board is shown below.
 5  | 61	| 62 | 63 | 64 | 65 | 66 |
 
 Whenever a user inputs a symbol into a cell, the program checks within 2 cells in 8 cardinal directions and compares it against a generated list of 16 possible combinations
-This methodology ensures that regardless of the board size, computational time will be the same for each winning condition check.
+This methodology ensures that regardless of the board size, computational time will be the same for each winning condition check allowing the program to be highly scalable.
 When a winning combination is detected, the program ends and displays the winner.
 Players are then presented with an option to either restart the game or end the program.
