@@ -18,14 +18,14 @@ Navigate to ../dist and run "ZenDesk_TicTacToe.exe"
 The tictactoe "Board" is generated in a 2D list and populated with numbers corresponding to their respective cells
 An example of a 6x6 board is shown below.
 
-    0   1   2   3   4   5
-	————————————————————————
-0|	1	  2	  3	  4	  5	  6
-1|	13	14	15	16	17	18
-2|	25	26	27	28	29	30
-3|	37	38	39	40	41	42
-4|	49	50	51	52	53	54
-5|	61	62	63	64	65	66
+ 0   1   2   3   4   5
+ --------------------------------
+0  | 1	| 2  | 3  |  4 | 5  | 6  |
+1  | 13	| 14 | 15 | 16 | 17 | 18 | 
+2  | 25	| 26 | 27 | 28 | 29 | 30 |
+3  | 37	| 38 | 39 | 40 | 41 | 42 | 
+4  | 49	| 50 | 51 | 52 | 53 | 54 |
+5  | 61	| 62 | 63 | 64 | 65 | 66 |
 
 Whenever a user inputs a symbol into a cell, the program checks within 2 cells in 8 cardinal directions and compares it against a generated list of 16 possible combinations
 This methodology ensures that regardless of the board size, computational time will be the same for each winning condition check.
