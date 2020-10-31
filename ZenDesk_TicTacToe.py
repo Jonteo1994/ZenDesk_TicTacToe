@@ -1,5 +1,3 @@
-import inspect #Inspect library is used below to check lines, used for error reporting.
-
 def validateUserChoice(playerName, turn, boardSize,board):                           #used to check that the user has selected a valid cell
     while True:
         try:
@@ -17,7 +15,7 @@ def validateUserChoice(playerName, turn, boardSize,board):                      
                 not type(board[row][col]) is int):                                  #User cell selection must be greater than 0 and less than board size squared
                 raise ValueError("User selection not within limit or cell occupied")#Row/Col cannot be greater than board size and must be larger than 0
         except ValueError:
-            print("Error! Please select a valid unoccupied cell between 1 and " + str(boardSize**2))
+            print("Invalid Input! Please select a valid unoccupied cell between 1 and " + str(boardSize**2))
         else:
             board[row][col] = turn                                                  #Assigns the current turn "X" or "O" to the selected valid cell
             return row,col                                                          #Returns the selected row and columns
@@ -30,8 +28,7 @@ def initBoard():
             if not type(boardSize) is int or boardSize < 3:
                 raise ValueError("Only Integers and board sizes greater than 3 are allowed")
         except ValueError:
-            errLine = inspect.currentframe().f_lineno                                                                   #Get which line the error occured on
-            print("Error in line "+ str(errLine) +"! Please enter a number >= 3")
+            print("Invalid Input! Please enter a valid number >= 3")
         else:
             boardW = int(boardSize)
             boardH = int(boardSize)
